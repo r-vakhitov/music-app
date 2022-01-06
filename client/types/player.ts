@@ -8,7 +8,7 @@ export interface PlayerState {
   pause: boolean;
 }
 
-export const enum PlayerActionTypes {
+export enum PlayerActionTypes {
   PLAY = "PLAY",
   PAUSE = "PAUSE",
   SET_ACTIVE = "SET_ACTIVE",

@@ -4,11 +4,11 @@ const initialState: PlayerState = {
   currentTime: 0,
   duration: 0,
   active: null,
-  volume: 0,
+  volume: 50,
   pause: true
 }
 
-export const playerReducer = (state, action: PlayerAction): PlayerState => {
+export const playerReducer = (state = initialState, action: PlayerAction): PlayerState => {
   switch (action.type) {
     case PlayerActionTypes.PAUSE:
       return {...state, pause: true}
